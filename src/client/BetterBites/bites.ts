@@ -251,23 +251,13 @@ export const onPlayerUpdate = () => {
 
     compareParts(
         (oldPart, newPart, injury) => {
-            for (const [key, value] of Object.entries(customBiteChance)) {
-                print(`${key}: ${value}`)
-            }
-
             const biteProtection = getPlayer().getBodyPartClothingDefense(newPart.getIndex(), true, false)
             const finalBiteChance = customBiteChance.total - biteProtection
             const shouldGetBit = roll < finalBiteChance
 
-            print(`Computed bite chance: ${customBiteChance.total}`)
-            print(`Bite protection: ${biteProtection}`)
-            print(`Final bite chance: ${finalBiteChance}`)
-            print(`Rolling ${roll} vs ${finalBiteChance}: ${roll < finalBiteChance ? "BITEN" : "no bite."}}`)
-
             switch (injury) {
                 case Injury.Scratch:
                     if (shouldGetBit) {
-                        print("Upgrading scratch to bite")
                         // we think we should upgrade this hit to a bite
                         newPart.setScratched(false, false)
                         newPart.SetBitten(true)
@@ -276,7 +266,6 @@ export const onPlayerUpdate = () => {
                     break
                 case Injury.Cut:
                     if (shouldGetBit) {
-                        print("Upgrading cut to bite")
                         // we think we should upgrade this hit to a bite
                         newPart.setCut(false, false)
                         newPart.SetBitten(true)
@@ -285,7 +274,6 @@ export const onPlayerUpdate = () => {
                     break
                 case Injury.Bite:
                     if (!shouldGetBit) {
-                        print("Downgrading bite to wound")
                         // we disagree with the game that we should get bit
                         newPart.setDeepWounded(true)
                         newPart.SetBitten(false, false)

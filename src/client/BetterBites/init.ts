@@ -4,12 +4,9 @@ import { initializeUI } from "./debug"
 import { BB } from "./store"
 import { ISDebugMenu as _ISDebugMenu } from '@asledgehammer/pipewrench'
 
-print("Better Bites loading...")
-
 declare const ISDebugMenu: _ISDebugMenu
 
 Events.onGameStart.addListener(() => {
-    print("Better Bites loaded!")
     BB.infected = isInfected()
     loadEffects()
     loadParts()
