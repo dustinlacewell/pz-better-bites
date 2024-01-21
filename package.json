@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "compile": "tstl --noResolvePaths store,../bites,ISCharacterProtection",
+    "compile": "tstl --noResolvePaths store",
     "clean": "del-cli dist",
     "check": "prettier --check . && eslint .",
     "lint": "prettier --write . && eslint .",
