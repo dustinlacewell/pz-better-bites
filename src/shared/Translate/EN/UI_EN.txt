@@ -1,0 +1,25 @@
+UI_EN = {
+
+UI_ConfigMODID_better_bites = "Better Bites",
+UI_Config_baseBiteChance = "Base Bite Chance"
+UI_Config_enabled = "Mod enabled",
+UI_Config_perInstanceTooltip = "Bite chance PER scratch, burn, etc:",
+UI_Config_bleed = "Bleed",
+UI_Config_scratch = "Scratch",
+UI_Config_cut = "Laceration",
+UI_Config_wound = "Deep Wound",
+UI_Config_burn = "Burn",
+UI_Config_bullet = "Lodged Bullet",
+UI_Config_glass = "Glass Shards",
+UI_Config_zombie = "Seen Zombie",
+UI_Config_atMaxTooltip = "Bite chance at MAX thirst, hunger, etc:",
+UI_Config_thirst = "Thirst",
+UI_Config_hunger = "Hunger",
+UI_Config_pain = "Pain",
+UI_Config_panic = "Panic",
+UI_Config_sick = "Sickness",
+UI_Config_drunk = "Drunkeness",
+UI_Config_sad = "Sadness",
+UI_Config_wet = "Wetness",
+
+}

@@ -1,0 +1,13 @@
+{
+  "modInfo": {
+    "name": "BetterBites",
+    "poster": "./poster.png",
+    "description": "If you get bitten, it's your fault now.",
+    "id": "BetterBites",
+    "url": "https://github.com/dustinlacewell/pz-better-bites,"
+  },
+  "modelsDir": "./src/models",
+  "texturesDir": "./src/textures",
+  "soundDir": "./src/sound",
+  "scriptsDir": "./src/scripts"
+}
