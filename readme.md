@@ -44,9 +44,17 @@ If the game would apply a bite, but Better Bites disagrees, it will downgrade th
 
 ## Protection HUD
 
+<p align="center">
+  <img src="./protection.png" />
+</p>
+
 The "Protection" tab in the status window has been updated with a "Chance" column. This shows how likely you are to dodge a bite. The values in this column will continuously change as your overall health changes.
 
 ## Debug Window
+
+<p align="center">
+  <img src="./debug.png" />
+</p>
 
 By running the game with the `-debug` flag, you can view the internal contributions to bite chance by all your current conditions. Just click the "Better Bites" button in the Debug Menu.
 
