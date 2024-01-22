@@ -13,6 +13,7 @@ This mod overrules the game in how this decision is made.
 ## Summary
 
 PZ's default bite mechanics essentially boil down to:
+
 - Have bite-protecting clothing
 - Don't get attacked from behind
 
