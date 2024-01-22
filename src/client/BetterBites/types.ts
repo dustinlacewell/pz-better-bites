@@ -6,13 +6,13 @@
  *       rendered Lua code.
  */
 export type SimpleBodyPart = {
-    scratched: boolean,
-    lacerated: boolean,
-    biten: boolean,
-}
+  scratched: boolean;
+  lacerated: boolean;
+  biten: boolean;
+};
 
 export enum Injury {
-    Scratch,
-    Cut,
-    Bite,
+  Scratch,
+  Cut,
+  Bite
 }
