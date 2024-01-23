@@ -40,7 +40,7 @@ const tip = () => ({
 })
 
 const BBConfig = {
-    modId: "better_bites",
+    modId: "BetterBites",
     name: "Better Bites",
     config,
     menu: {

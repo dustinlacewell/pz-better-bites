@@ -1,6 +1,6 @@
 UI_EN = {
 
-UI_ConfigMODID_better_bites = "Better Bites",
+UI_ConfigMODID_BetterBites = "Better Bites",
 UI_Config_baseBiteChance = "Base Bite Chance"
 UI_Config_enabled = "Mod enabled",
 UI_Config_perInstanceTooltip = "Bite chance PER scratch, burn, etc:",

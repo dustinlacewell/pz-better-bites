@@ -247,10 +247,28 @@ export const onPlayerUpdate = () => {
     
     const customBiteChance = calculateBiteChance()
     const roll = ZombRand(0, 100)
-    
+
+    const zeds = getPlayer().getSurroundingAttackingZombies()
+
+    const reaction = getPlayer().getHitReaction()
+
+    let bitten = false
+    switch (reaction) {
+        case "Bite":
+        case "BiteLEFT":
+        case "BiteRIGHT":
+            bitten = true
+            break
+        default:
+            bitten = false
+    }
 
     compareParts(
         (oldPart, newPart, injury) => {
+            if (zeds === 0 || !bitten) {
+                return
+            }
+
             const biteProtection = getPlayer().getBodyPartClothingDefense(newPart.getIndex(), true, false)
             const finalBiteChance = customBiteChance.total - biteProtection
             const shouldGetBit = roll < finalBiteChance

@@ -70,7 +70,6 @@ export const ISCharacterProtection_render = function (this: ISCharacterProtectio
             draw(scratchX, scratchDefense)
 
             yText += FONT_HIGHT_SMALL + 2
-
         }
     }
 

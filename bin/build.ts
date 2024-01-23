@@ -11,11 +11,11 @@ const build = () => {
     fs.copySync('poster.png', 'dist/BetterBites/poster.png', { overwrite: true })
     // copy readme.md to dist
     fs.copySync('readme.md', 'dist/BetterBites/readme.md', { overwrite: true })
-    // remove C:/Users/.../Zomboid/mods/better_bites
+    // remove C:/Users/.../Zomboid/mods/BetterBites
     fs.removeSync('C:/Users/Dustin/Zomboid/mods/BetterBites')
-    // ensure C:/Users/.../Zomboid/mods/better_bites exists
+    // ensure C:/Users/.../Zomboid/mods/BetterBites exists
     fs.ensureDirSync('C:/Users/Dustin/Zomboid/mods/BetterBites')
-    // copy dist to C:/Users/.../Zomboid/mods/better_bites
+    // copy dist to C:/Users/.../Zomboid/mods/BetterBites
     fs.copySync('dist', 'C:/Users/Dustin/Zomboid/mods/', { overwrite: true })
 }
 
